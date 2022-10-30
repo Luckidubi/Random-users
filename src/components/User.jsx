@@ -18,11 +18,12 @@ export default function User({
     <div>
       <Box
         display="flex"
+        overflow="clip"
         flexDirection="row"
-        alignItems="flex-start"
+        alignItems="center"
         p={{ base: 4, sm: 4, md: "24px" }}
-        gap="6px"
-        w={{ base: "320px", md: "360px" }}
+        gap="8px"
+        w={{ base: "320px", md: "360px", xl: 370 }}
         h={{ md: "auto" }}
         bg="#FBFCFF"
         boxShadow="lg"
@@ -55,6 +56,7 @@ export default function User({
             alignItems="flex-start"
             p="20px 0px 0px"
             gap="4px"
+            textOverflow="hidden"
           >
             <Box
               fontWeight="bold"
@@ -81,11 +83,7 @@ export default function User({
             w={{ md: "140px" }}
             h={{ md: "48px" }}
           >
-            <Text
-              fontSize={{ base: 11, sm: 13 }}
-              letterSpacing="-3%"
-              overFlow="hidden"
-            >
+            <Text fontSize={{ base: 11, sm: 13 }} letterSpacing="-3%">
               {email}
             </Text>
             <Text fontSize={14}>{phone}</Text>

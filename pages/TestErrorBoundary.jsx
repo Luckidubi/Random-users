@@ -31,9 +31,9 @@ export default function TestErrorBoundary() {
   return (
     <>
       <Box
-        h="100vh"
-        maxW="1120px"
-        w={{ base: 360, sm: 400, md: 780, lg: 1200, xl: 1400 }}
+        minH="90vh"
+        maxW="1440px"
+        w={{ base: 360, sm: 400, md: 780, lg: 1200, xl: 1300 }}
       >
         <ErrorBoundary
           FallbackComponent={ErrorPage}
@@ -45,6 +45,7 @@ export default function TestErrorBoundary() {
               <Button
                 onClick={handleClick}
                 variant="outline"
+                colorScheme="white"
                 leftIcon={<ArrowBackIcon boxSize={5} />}
                 w="6em"
               >
@@ -60,14 +61,22 @@ export default function TestErrorBoundary() {
             alignItems="center"
             h="100%"
           >
-            <Heading as="h4" size="2xl" textAlign="center">
+            <Heading
+              mb={8}
+              as="h3"
+              fontWeight="800"
+              size="3xl"
+              textAlign="center"
+            >
               Don't click the button below
             </Heading>
 
             <Box display="flex" justifyContent="center">
               <Button
+                size="lg"
                 onClick={handleDisaster}
                 variant="outline"
+                colorScheme="red"
                 _hover={{ cursor: "pointer", bg: "red.400" }}
               >
                 Danger

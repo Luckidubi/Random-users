@@ -13,19 +13,19 @@ export default function UserDetails() {
   if (error) return <h1>Error</h1>;
 
   let getUsername = data?.results?.find(
-    (user) => user.login.username === username
+    (user) => user?.login.username === username
   );
 
   let getDob = new Date(getUsername?.dob.date);
   return (
     <div>
       <Flex>
-        <Box m={2} my={6}>
+        <Box mb={8}>
           <Button
             onClick={() => navigate(-1)}
             variant="outline"
+            colorScheme="white"
             leftIcon={<ArrowBackIcon boxSize={4} />}
-            w="6em"
           >
             Back
           </Button>
@@ -35,19 +35,20 @@ export default function UserDetails() {
         display="flex"
         flexDirection="column"
         alignItems="center"
-        gap={{ base: 6, md: 8 }}
-        w={{ base: 360, sm: 400, md: 780, lg: 960 }}
-        h="100%"
+        gap={{ base: 4, md: 6 }}
+        w={{ base: 320, sm: 425, md: 780 }}
+        minH="960px"
         borderRadius="10px"
+        boxShadow="xl"
       >
         <Box
-          h={{ md: 66 }}
           fontStyle="normal"
           fontWeight="800"
           fontSize={{ sm: 28, md: 48 }}
           textAlign="center"
           color="#6A24FF"
           order="0"
+          p={4}
         >
           {getUsername?.name.title} {getUsername?.name.first}{" "}
           {getUsername?.name.last}
@@ -141,7 +142,7 @@ export default function UserDetails() {
               order="1"
               flex="none"
             >
-              {getUsername.login.username}
+              {getUsername?.login?.username}
             </Box>
           </Box>
 
@@ -179,7 +180,7 @@ export default function UserDetails() {
               order="1"
               flex="none"
             >
-              {getUsername.gender}
+              {getUsername?.gender}
             </Box>
           </Box>
 
@@ -217,9 +218,9 @@ export default function UserDetails() {
               order="1"
               flex="none"
             >
-              {getUsername.location.street.number}
+              {getUsername?.location.street.number}
               {", "}
-              {getUsername.location.street.name}
+              {getUsername?.location.street.name}
             </Box>
           </Box>
 
@@ -257,7 +258,7 @@ export default function UserDetails() {
               order="1"
               flex="none"
             >
-              {getUsername.location.city}
+              {getUsername?.location.city}
             </Box>
           </Box>
 
@@ -295,8 +296,8 @@ export default function UserDetails() {
               order="1"
               flex="none"
             >
-              {getUsername.location.timezone.offset}{" "}
-              {getUsername.location.timezone.description}
+              {getUsername?.location.timezone.offset}{" "}
+              {getUsername?.location.timezone.description}
             </Box>
           </Box>
 

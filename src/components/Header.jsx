@@ -12,7 +12,7 @@ export default function Header() {
         display="flex"
         w={{ sm: "320px", md: "738px", lg: "960px" }}
         h="128px"
-        alignItems="flex-start"
+        alignItems="center"
         flexDirection="column"
         gap="24px"
         alignSelf="stretch"
@@ -20,7 +20,7 @@ export default function Header() {
         order={0}
       >
         <Box
-          w="full"
+          
           h="40px"
           fontFamily="Merriweather"
           fontStyle="normal"

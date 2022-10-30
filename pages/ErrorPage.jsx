@@ -37,15 +37,26 @@ export default function ErrorPage(props) {
             <details style={{ whiteSpace: "pre-wrap", fontSize: ".5em" }}>
               <i>{props.error.toString()}</i>
               <br></br>
-              {props.resetButton && (
-                <Button onClick={props.resetFunction} variant="outline">
-                  Try Again
-                </Button>
-              )}
             </details>
-            <Button as={Link} to="/" variant="outline">
-              Go Home
-            </Button>
+            {props.resetButton ? (
+              <Button
+                colorScheme="white"
+                onClick={props.resetFunction}
+                variant="outline"
+              >
+                Try Again
+              </Button>
+            ) : (
+              <Button
+                as={Link}
+                onClick={() => window.reload()}
+                to="/"
+                variant="outline"
+                colorScheme="white"
+              >
+                Go Home
+              </Button>
+            )}
           </Box>
         </Flex>
       </Box>

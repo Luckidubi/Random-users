@@ -13,14 +13,14 @@ export default function Layout() {
       display="flex"
       flexDirection="column"
       h="100%"
-      maxW="full"
+      maxW="1920px"
       p="10px"
       alignItems="center"
       gap="70px"
       bg="#FFFFFF"
       mb="10em"
     >
-      <Box className="container" px={10} maxW="full" h="auto">
+      <Box className="container" px={{ sm: 4, md: 10 }} maxW="1440px" h="auto">
         <Nav ref={btnRef} onOpen={onOpen} />
         <DrawerComponent isOpen={isOpen} onClose={onClose} btnRef={btnRef} />
         <Outlet />
