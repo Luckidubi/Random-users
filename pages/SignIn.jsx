@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { GoogleButton } from "react-google-button";
 import { useAuth } from "/src/AuthProvider";
 import { useEffect } from "react";
+import SEO from "../src/components/SEO";
 
 function SignIn() {
   const navigate = useNavigate();
@@ -33,6 +34,13 @@ function SignIn() {
 
   return (
     <div>
+       <SEO
+        title="Sign In to Workers Lounge"
+        description="Sign In to meet your fellow workers"
+        name="Workers' Lounge"
+        type="website"
+        imgUrl="/workers.jpg"
+      />
       <Box
         display="flex"
         flexDirection={{ base: "column", sm: "column", md: "row" }}

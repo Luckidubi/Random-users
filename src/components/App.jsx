@@ -8,11 +8,13 @@ import Guard from "/src/components/Guard";
 import AuthProvider from "/src/AuthProvider";
 import TestErrorBoundary from "/pages/TestErrorBoundary";
 import { Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 
 export default function App() {
   return (
     <main>
       <AuthProvider>
+        <HelmetProvider>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
@@ -38,6 +40,7 @@ export default function App() {
             <Route path="*" element={<Page404 />} />
           </Route>
         </Routes>
+        </HelmetProvider>
       </AuthProvider>
     </main>
   );

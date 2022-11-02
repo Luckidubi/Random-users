@@ -1,9 +1,17 @@
 import { Box, Button, Flex, Image, Text, Heading } from "@chakra-ui/react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import SEO from "../src/components/SEO";
 
 function Home() {
   return (
     <div>
+      <SEO
+        title="Welcome to Workers Lounge"
+        description="A home for workers, a place where workers of the world get together to connect."
+        name="Workers' Lounge"
+        type="website"
+        imgUrl="/workers.jpg"
+      />
       <Box
         display="flex"
         flexDirection={{ base: "column", sm: "column", md: "row" }}
