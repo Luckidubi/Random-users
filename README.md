@@ -13,5 +13,7 @@ Setup react-router, implement Nested routes, 404 page, and Error boundary. Set u
 
 - setup pagination
 - Add Error boundary
+- Add Firebase Authentication
 
- 
+
+## Live link [here](https://random-users-73bff.web.app/)
