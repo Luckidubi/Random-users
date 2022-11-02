@@ -19,6 +19,7 @@ export default function User({
       <Box
         display="flex"
         overflow="clip"
+        flexGrow="1"
         flexDirection="row"
         alignItems="center"
         p={{ base: 4, sm: 4, md: "24px" }}
