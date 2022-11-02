@@ -3,17 +3,17 @@ import { initializeApp } from "firebase/app";
 import { connectAuthEmulator } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
+  apiKey: "AIzaSyCimHvztrbsqBsL9-03jODnGW1DcTmTxbA",
   authDomain: "random-users-73bff.firebaseapp.com",
   projectId: "random-users-73bff",
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSENGER_ID,
-  appId: import.meta.env.VITE_APP_ID,
+  storageBucket: "random-users-73bff.appspot.com",
+  messagingSenderId: "381057806801",
+  appId: "1:381057806801:web:054c08db9d8ed2634170f0",
+  measurementId: "G-BPXB7HGYRS",
 };
 
-console.log(firebaseConfig);
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export default app
+export default app;
 // connectAuthEmulator(auth, "http://localhost:9099");
