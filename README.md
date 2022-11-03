@@ -4,17 +4,17 @@ Set a firebase hosting and authentication using the Google Authentication method
 
 ## Steps:
 
-- setup homepage
-- setup user component
-- setup user details page
-- setup 404 component
-- set up react-router and routes
-- setup context api
-- make api call to randomuser.me (API loading state)
+- ~~setup homepage~~
+- ~~setup user component~~
+- ~~setup user details page~~
+- ~~setup 404 component~~
+- ~~set up react-router and routes~~
+- ~~setup context api~~
+- ~~make api call to randomuser.me with fetch api~~
 
-- setup pagination
-- Add Error boundary
-- Add Firebase Authentication
-- Add SEO
+- ~~setup pagination~~
+- ~~Add Error boundary~~
+- ~~Add Firebase Authentication~~
+- ~~Setup react-helmet-async for SEO~~
 
 ## Live link [here](https://random-users-73bff.web.app/)
