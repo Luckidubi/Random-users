@@ -10,6 +10,7 @@ function Home() {
         description="A home for workers, a place where workers of the world get together to connect."
         name="Workers' Lounge"
         type="website"
+        url="https://random-users-73bff.web.app/"
         imgUrl="https://res.cloudinary.com/luckidubi/image/upload/c_scale,h_630,w_1200/v1667424831/e4jcbty8zewhiogjpmbl.png"
       />
       <Box
@@ -32,7 +33,7 @@ function Home() {
           w={{ sm: "full", md: "60%" }}
         >
           <Heading
-            as="h2"
+            as="h1"
             // size={{ sm: "4xl", md: "5xl" , lg:'5xl'}}
             size="3xl"
             fontWeight="800"

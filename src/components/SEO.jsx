@@ -1,10 +1,11 @@
 import { Helmet } from "react-helmet-async";
-export default function SEO({ title, name, description, type, imgUrl }) {
+export default function SEO({ title, name, description, type, imgUrl, url }) {
   return (
     <Helmet>
       {/* Standard metadata tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta rel="canonical" href={url} />
       {/* End standard metadata tags */}
 
       {/* <!-- Google / Search Engine Tags --> */}
@@ -14,7 +15,7 @@ export default function SEO({ title, name, description, type, imgUrl }) {
 
 
       {/* Facebook tags */}
-      {/* <meta property="og:url" content="https://random-users-73bff.web.app/"/> */}
+      <meta property="og:url" content={url}/>
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
