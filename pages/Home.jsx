@@ -10,7 +10,7 @@ function Home() {
         description="A home for workers, a place where workers of the world get together to connect."
         name="Workers' Lounge"
         type="website"
-        imgUrl="/workers.jpg"
+        imgUrl="https://res.cloudinary.com/luckidubi/image/upload/c_scale,h_630,w_1200/v1667424831/e4jcbty8zewhiogjpmbl.png"
       />
       <Box
         display="flex"

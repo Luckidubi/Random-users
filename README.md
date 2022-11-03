@@ -1,8 +1,9 @@
 # Task
-Setup react-router, implement Nested routes, 404 page, and Error boundary. Set up client-side pagination using randomuser.me API in one of your routes called Users - you should show the prev, next, and navigation to individual pages 1, 2, 3, 4, 5 etc. Implement accessibility and disabled state and API loading states.
 
+Set a firebase hosting and authentication using the Google Authentication method, and set up backend pagination using randomuser.me paginated API URLs. Show the necessary navigation and its disabled state. Show accessibility state as well. Show SEO for each page, show a navigation menu at the top of each page, implement Error boundary and provide a page to test it, 404 page, and proper UI designs.
 
 ## Steps:
+
 - setup homepage
 - setup user component
 - setup user details page
@@ -14,6 +15,6 @@ Setup react-router, implement Nested routes, 404 page, and Error boundary. Set u
 - setup pagination
 - Add Error boundary
 - Add Firebase Authentication
-
+- Add SEO
 
 ## Live link [here](https://random-users-73bff.web.app/)
